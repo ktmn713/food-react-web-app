@@ -1,0 +1,22 @@
+.body {
+    background-color: #d6d0c8;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.food-title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #4e4b44;
+    text-align: center;
+}
+
+.food-subtitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d6d0c8;
+    background-color: #302a27;
+    background-size: 50%;
+    text-align: center;
+}
+
