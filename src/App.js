@@ -5,8 +5,9 @@ import Home from './Food/Home';
 import Profile from './Food/Profile';
 import Search from './Food/Search';
 import Details from './Food/Details';
-import Login from './Food/Login';
 import Register from './Food/Register';
+import Signin from './Food/Profile/signin';
+import Signup from './Food/Profile/signup';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/profile/*" element={<Profile />} />
           <Route path="/search/*" element={<Search />} />
           <Route path="/details/*" element={<Details />} />
-          <Route path="/login/*" element={<Login />} />
+          <Route path="/signin/*" element={<Signin />} />
+          <Route path="/signup/*" element={<Signup />} />
           <Route path="/register/*" element={<Register />} />
         </Routes>
       </div>
