@@ -1,9 +1,8 @@
 import '../style.css'
-import Nav from "../Nav";
+import Nav from '../Nav'
 
 function Home() {
     return (
-
 
         <div className='body'>
             <div><Nav /></div>

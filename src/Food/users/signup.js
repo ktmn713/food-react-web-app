@@ -12,11 +12,12 @@ function Signup() {
   const signup = async () => {
     try {
       await client.signup(credentials);
-      navigate("/Profile/Signup");
+      navigate("/Profile/Account");
     } catch (err) {
       setError(err.response.data.message);
     }
   };
+
 
   return (
     <div className="signup-grid">
@@ -32,28 +33,28 @@ function Signup() {
 
         <div className="signup-form-text">
           {error && <div>{error}</div>}
-          Email Address 
+          Email Address
           <br />
           <input
-          className="signup-form-input"
-          placeholder="yourname@example.com"
+            className="signup-form-input"
+            placeholder="yourname@example.com"
             value={credentials.username}
             onChange={(e) => setCredentials({
               ...credentials,
               username: e.target.value
             })} />
           <br />
-          Password 
-          <br /> 
+          Password
+          <br />
           <input
-          className="signup-form-input"
-          placeholder="Enter your password"
+            className="signup-form-input"
+            placeholder="Enter your password"
             value={credentials.password}
             onChange={(e) => setCredentials({
               ...credentials,
               password: e.target.value
             })} />
-            <br />
+          <br />
           <button onClick={signup} className="signup-button">
             Join Now
           </button>

@@ -12,7 +12,7 @@ function Signin() {
   const navigate = useNavigate();
   const signin = async () => {
     await client.signin(credentials);
-    navigate("/Profile");
+    navigate("/Profile/Account");
   };
   const {pathname} = useLocation();
   const [error, setError] = useState("");
@@ -41,10 +41,10 @@ function Signin() {
 
         <div className="signup-form-text">
           {error && <div>{error}</div>}
-          Email Address
+          Username
           <br />
           <input className="signup-form-input"
-          placeholder="yourname@example.com"
+          placeholder="Enter your username"
            value={credentials.username} onChange={(e) => setCredentials({ ...credentials, username: e.target.value })} />
           <br />
           Password
